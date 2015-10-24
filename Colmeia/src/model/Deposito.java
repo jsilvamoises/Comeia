@@ -10,8 +10,8 @@ package model;
  * @author note-moises
  */
 public class Deposito {
-    private int geleiaReal;
-    private int nectar;
+    private int geleiaReal=0;
+    private int nectar=0;
 
     public Deposito() {
     }

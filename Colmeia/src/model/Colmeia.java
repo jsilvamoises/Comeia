@@ -12,6 +12,14 @@ package model;
 public class Colmeia {
     public static void main(String[] args) {
         
+        Mutex mutex = new Mutex();
+        Deposito deposito = new Deposito();
+        Rainha  rainha= new Rainha("Rainha R_", null, deposito, mutex);        
+        
+        Zangao zangao = new Zangao("Zangao Z_", rainha, deposito, mutex);
+        rainha.start();
+       // zangao.start();
+        
     }
     
 }

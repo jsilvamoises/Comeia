@@ -10,8 +10,8 @@ package model;
  * @author note-moises
  */
 public class Status {
-    private boolean choosing;
-    private int ticket;
+    private boolean choosing= false;
+    long ticket=0;
 
     public Status() {
     }
@@ -24,11 +24,11 @@ public class Status {
         this.choosing = choosing;
     }
 
-    public int getTicket() {
+    public long getTicket() {
         return ticket;
     }
 
-    public void setTicket(int ticket) {
+    public void setTicket(long ticket) {
         this.ticket = ticket;
     }
     
