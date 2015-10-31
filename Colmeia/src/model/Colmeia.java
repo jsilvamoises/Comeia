@@ -15,9 +15,10 @@ public class Colmeia {
         Mutex mutex = new Mutex();
         Deposito deposito = new Deposito();
         Rainha  rainha= new Rainha("Rainha R_", null, deposito, mutex);        
+        rainha.start();
         
         Zangao zangao = new Zangao("Zangao Z_", rainha, deposito, mutex);
-        rainha.start();
+        
        // zangao.start();
         
     }
